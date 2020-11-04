@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBall : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerBall : MonoBehaviour
     Rigidbody rigid;
     private bool isJump;
     AudioSource audioSource;
+    public GameManager gameManager;
 
 
     void Awake() {
@@ -34,7 +36,18 @@ public class PlayerBall : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.tag == "Floor") {
-        isJump = false;
+            isJump = false;
+        } else if(collision.gameObject.tag == "Finish")
+        {
+            if(itemCount == gameManager.totalItemCount)
+            {
+                // Game Clear!!
+                SceneManager.LoadScene("Example1_1");
+            } else
+            {
+                // Restart !!
+                SceneManager.LoadScene("Example1_0");
+            }
         }
     }
 
