@@ -37,17 +37,6 @@ public class PlayerBall : MonoBehaviour
     void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.tag == "Floor") {
             isJump = false;
-        } else if(collision.gameObject.tag == "Finish")
-        {
-            if(itemCount == gameManager.totalItemCount)
-            {
-                // Game Clear!!
-                SceneManager.LoadScene("Example1_1");
-            } else
-            {
-                // Restart !!
-                SceneManager.LoadScene("Example1_0");
-            }
         }
     }
 
@@ -58,6 +47,18 @@ public class PlayerBall : MonoBehaviour
             itemCount++;
             audioSource.Play();
             other.gameObject.SetActive(false);
+        } else if (other.gameObject.tag == "Finish")
+        {
+            if (itemCount == gameManager.totalItemCount)
+            {
+                // Game Clear!!
+                SceneManager.LoadScene("Example1_"+(++gameManager.stage));
+            }
+            else
+            {
+                // Restart !!
+                SceneManager.LoadScene("Example1_"+gameManager.stage);
+            }
         }
     }
 }
