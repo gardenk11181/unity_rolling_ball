@@ -47,12 +47,20 @@ public class PlayerBall : MonoBehaviour
             itemCount++;
             audioSource.Play();
             other.gameObject.SetActive(false);
+            gameManager.setItemCount(itemCount);
         } else if (other.gameObject.tag == "Finish")
         {
             if (itemCount == gameManager.totalItemCount)
             {
                 // Game Clear!!
-                SceneManager.LoadScene("Example1_"+(++gameManager.stage));
+                if(gameManager.stage==1)
+                {
+                    SceneManager.LoadScene(0);
+                } else
+                {
+                    SceneManager.LoadScene("Example1_" + (++gameManager.stage));
+                }
+                
             }
             else
             {
