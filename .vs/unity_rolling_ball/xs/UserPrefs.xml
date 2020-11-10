@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{EB6BF954-338C-126A-FC71-8E05204AB47F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerBall.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
       <File FileName="Assets/Scripts/ItemCan.cs" Line="11" Column="3" />
-      <File FileName="Assets/Scripts/PlayerBall.cs" Line="45" Column="50" />
+      <File FileName="Assets/Scripts/PlayerBall.cs" />
       <File FileName="Assets/Scripts/CameraMove.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="14" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +12,7 @@
           <Node name="unity_rolling_ball" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerBall.cs" selected="True" />
+                <Node name="GameManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="52e992e0-7e41-42c3-b4e0-c6d401590ea8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="45d181be-ce4d-49e9-8466-38f370ac0b7e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
