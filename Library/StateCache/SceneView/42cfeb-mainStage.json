@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":989.84228515625,"y":458.978515625,"z":-72.9425048828125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":660.7666015625,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":1771.0,"y":924.0,"z":0.0},"rotation":{"x":0.021939881145954133,"y":-0.6984614729881287,"z":-0.021433228626847268,"w":-0.7149912118911743},"size":2297.95263671875,"orthographic":false}
+>>>>>>> fetch
